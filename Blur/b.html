@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+       img{
+        width: 100vw;
+        height: 100vh;
+        
+       }
+       #container{
+        position: absolute;
+        transition: 3s;
+        
+        
+       }
+       #site{
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
+            animation: blur 5s ease;
+            
+            
+            
+       }
+       #carregamento{
+            width: 300px;
+            height: 300px;
+            background-color: transparent;
+            border: 1px solid black;
+            border-radius: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-100px, -100px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            z-index: 1;
+       }
+       p{
+        font-size: 50px;
+        color: aliceblue;
+        animation: mudandoDeCor 5s ease;
+       }
+       @keyframes blur {
+            from{
+                backdrop-filter: blur(10px);
+            }
+            to{
+                backdrop-filter: blur(0px);
+            }
+       }
+       @keyframes mudandoDeCor{
+        from{
+            color: #fafafa;
+        }
+        to{
+            color: transparent;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div id="container"  style="filter: blur(0px);">
+        <img src="./nezuko-kamado-pink-5120x2880-16946.jpg" alt="">
+      
+    </div>
+    <div id="site">
+
+    </div>
+    <div id="carregamento">
+        <p id="num">100%</p>
+    </div>
+    <script>
+        let ini = 0
+        let int = setInterval(blurring, 30)
+
+        function blurring(){
+            document.getElementById('num').innerText = ini++ + '%'
+
+            if(ini > 100){
+                clearInterval(int)
+                document.getElementById('num').innerText = ''
+            }
+        }
+        document.getElementById('container') = ini
+    </script>
+</body>
+</html>
