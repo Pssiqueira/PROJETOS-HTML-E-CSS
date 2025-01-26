@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../Desktop/arquivos vs code"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PROJETOS SEPARADOS",
+		"liveServer.settings.port": 5501
+	}
+}
