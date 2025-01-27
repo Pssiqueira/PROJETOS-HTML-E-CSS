@@ -173,6 +173,9 @@ footer{
     }
     .idroid1{
         font-size: 1.5rem;
+        font-family: personalizada;
+        text-align: start;
+        color: #18632F;
     }
     #footer{
         font-size: 0.7rem;
