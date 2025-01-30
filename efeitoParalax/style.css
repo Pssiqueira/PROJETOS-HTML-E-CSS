@@ -5,6 +5,9 @@
     --fontheader: "Passion One", serif;
     --fontxt: "Sriracha", serif;
 }
+main{
+    display: block;
+}
 *{
     margin: 0;
 }
@@ -40,15 +43,135 @@ a{
 }
 
 #joaninha{
+    position: relative;
+    height: 1200px;
     background: black url(./imagens/joaninhas-1024x576.jpg) center center no-repeat fixed;      
     background-size: cover;                                                           
     padding: 20px 0px 0px 20px ;
+    box-shadow: 10px 10px 10px 0.5px rgba(0, 0, 0, 0.582) inset;
 }
-#txt1, #txt3, #txt4, #txt5{
+#txt1, #txt3, #txt5{
     padding: 20px;
+    
+    font-size: 4rem;
+    
 }
+#txt1{
+    position: relative;
+    padding: 150px 0px 150px 0px;
+}
+
 #txt2{
+    
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
     display: inline-block;
     color: #fff;
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.438), transparent );
+    font-size: 4rem;
+
+}
+
+#txt3 > p{
+    margin-bottom: 80px;
+}
+
+#papel{
+    position: relative;
+    height: 1200px;
+    background: black url(./imagens/carta.jpg) center center no-repeat fixed;      
+    background-size: cover;                                                           
+    padding: 20px 0px 0px 20px ;
+    box-shadow: 10px 10px 10px 0.5px rgba(0, 0, 0, 0.582) inset;
+}
+#txt4{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    display: inline-block;
+    color: #fff;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.438), transparent );
+}
+#txt4 > p {
+    font-size: 4rem;
+}
+#txt5 {
+    display: inline-block;
+    
+}
+#txt5 > p {
+    margin-bottom: 20px;
+}
+footer{
+    margin-top: 100px;
+    background-color: black;
+    padding: 10px;
+}
+footer>p {
+    
+    color: #fff;
+    text-align: center;
+}
+
+@media(max-width: 950px){
+    h1{
+        font-size: 3.5rem;
+    }
+    .txt{
+        font-size: 2rem;
+    }
+    #txt4 > p{
+        font-size: 2rem;
+    }
+    #joaninha, #papel{
+        height: 500px;
+    }
+    #cabecalho{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media(max-width: 500px){
+    h1{
+        font-size: 3rem;
+    }
+    .txt{
+        font-size: 1.5rem;
+    }
+    #txt4 > p{
+        font-size: 1.5rem;
+    }
+    #joaninha, #papel{
+        height: 400px;
+    }
+    #cabecalho{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 450px){
+    h1{
+        font-size: 3rem;
+    }
+    .txt{
+        font-size: 1rem;
+    }
+    #txt4 > p{
+        font-size: 1rem;
+    }
+    #joaninha, #papel{
+        height: 300px;
+    }
+    #milton, a{
+        font-size: 0.9rem;
+    }
+    footer{
+        margin-top: 10px;
+    }
+    #cabecalho{
+        width: 100%;
+        text-align: center;
+    }
 }
