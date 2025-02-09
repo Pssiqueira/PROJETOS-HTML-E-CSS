@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Rasa:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root{
+    --font: "Rasa", serif;
+    --font2: "Pacifico", serif;
+    --cor1: #011C26;
+    --cor2: #024059;
+    --cor3: #03658C;
+    --cor4: #0367A6;
+    --cor5: #0477BF;
+}
+body{
+    padding-top: 20px;
+    margin: 0;
+    background-image: linear-gradient(90deg, var(--cor2), var(--cor3));
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+#s1{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    
+}
+section > h1{
+    margin: 0;
+}
+section > p{
+    margin: 0;
+}
+img{
+    display: block;
+    margin-left: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+#rubrica{
+    
+}
+form{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);     
+    width: 700px;
+    height: 450px;
+    background-image: linear-gradient(to right, var(--cor1), var(--cor5));
+    padding: 20px;
+    border-radius: 20px;
+}
+#bem-vindo{
+    width: 450px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+}
+#txt1{
+    font-family: var(--font2);
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+}
+h2{
+    font-family: var(--font2);
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    margin-top: 50px;
+}
+#login{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor5);
+    color: white;
+    width: 300px;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: var(--font);
+    box-shadow: 0.5px 0.5px 54px 0.5px var(--cor1);
+}
+#cad{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin-bottom: 15px;
+    height: 23px;
+    outline: none;
+    border-radius: 5px;
+    border: 0.1px solid rgba(255, 255, 255, 0.164);
+    background-color: transparent;
+    color: white;
+    font-family: var(--font);
+    font-weight: bold;
+}
+#entrar{
+    margin-top: 20px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.3rem;
+    
+}
+#entrar:hover{
+    background-color: #011c266c;
+    transition: .5s;
+}
+#semcad{
+    display: flex;
+    flex-direction: column;
+    font-size: .9rem;
+    font-family: var(--font);
+    margin-top: 30px;
+}
+a{
+    text-decoration: none;
+    color: #011C26;
+
+}
+p{
+    margin: 5px;
+    font-family: var(--font);
+}
