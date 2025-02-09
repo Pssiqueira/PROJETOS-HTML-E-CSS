@@ -54,6 +54,8 @@ header > div > p{
 img{
     margin: 10px;
     border-radius: 50%;
+    box-shadow: 0.5px 0.5px 54px 0.5px var(--cor1);
+    border: 1px solid rgba(255, 255, 255, 0.411);
 }
 nav{
     display: flex;
