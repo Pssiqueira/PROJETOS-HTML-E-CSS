@@ -105,7 +105,7 @@ form{
     gap: 20px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -50% );
     width: 700px;
     background-image: linear-gradient(to right, var(--cor1), var(--cor5));
     padding: 20px;
@@ -197,9 +197,9 @@ p{
         display: flex;
         flex-direction: row;
         gap: 20px;
-        top: 70%;
+        top: 50%;
         left: 50%;
-        transform: translate(-50%, -40%);
+        transform: translate(-50%, -60%);
         width: 600px;
         height: 450px;
         background-image: linear-gradient(to right, var(--cor1), var(--cor5));
@@ -238,7 +238,7 @@ p{
         display: flex;
         flex-direction: row;
         gap: 20px;
-        top: 70%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -40%);
         width: 600px;
@@ -365,4 +365,23 @@ p{
     gap: 10px;
   }
     
+}
+@media(max-height: 768px){
+    main{
+        position: relative;
+        top: 30%;
+    }
+    header{
+        height: 150px;
+    }
+    #logo > #ps {
+        font-size: 1.5rem;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    #bnav{
+        margin-top: -15px;
+    }
 }
