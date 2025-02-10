@@ -14,13 +14,9 @@ body{
     width: 100vw;
     height: 100vh;
     margin: 0;
-    background-color: black;
+     background-image: linear-gradient(to right, var(--cor1), var(--cor5));
 }
-#container{
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(90deg, var(--cor2), var(--cor3));
-}
+
 h1, p{
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.541);
 }
@@ -80,6 +76,24 @@ nav > a:hover{
     justify-content:space-between;
     padding: 10px;
 }
+#nav2{
+    margin-right: 20px;
+}
+#nav1{
+    margin-left: 20px;
+}
+#lupa{
+    display: flex;
+    gap: 5px;
+    align-items: end;
+}
+#lupa > input {
+    margin: 0;
+}
+main{
+     width: 100%;
+     height: 100%;
+}
 form{
     position: absolute;
     display: flex;
@@ -89,12 +103,12 @@ form{
     left: 50%;
     transform: translate(-50%, -40%);
     width: 700px;
-    height: 450px;
     background-image: linear-gradient(to right, var(--cor1), var(--cor5));
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0.5px 0.5px 54px 0.5px var(--cor1);
 }
+
 #bem-vindo{
     width: 450px;
     border-radius: 20px;
@@ -167,4 +181,202 @@ a{
 p{
     margin: 5px;
     font-family: var(--font);
+}
+@media (max-width: 900px){
+    nav{
+        display: flex;
+        gap: 30px;
+        font-size: 1rem;
+    }
+    form{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        width: 600px;
+        height: 450px;
+        background-image: linear-gradient(to right, var(--cor1), var(--cor5));
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0.5px 0.5px 54px 0.5px var(--cor1);
+    }
+    #entrar{
+        margin-top: 15px;
+        height: 30px;
+        color: white;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    #prob{
+        font-size: 1.2rem;
+    }
+    #semcad{
+        display: flex;
+        flex-direction: column;
+        font-size: .9rem;
+        font-family: var(--font);
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 750px){
+    nav{
+        display: flex;
+        gap: 15px;
+        font-size: 1rem;
+    }
+   
+    form{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        width: 600px;
+        background-image: linear-gradient(to right, var(--cor1), var(--cor5));
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0.5px 0.5px 54px 0.5px var(--cor1);
+    }
+    #txt1{
+        font-family: var(--font2);
+        font-size: 2rem;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 670px){
+    nav{
+        display: flex;
+        gap: 15px;
+        font-size: 1rem;
+    }
+    form{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        width: 450px;
+        gap: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        background-image: linear-gradient(to right, var(--cor1), var(--cor5));
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0.5px 0.5px 54px 0.5px var(--cor1);
+    }
+    #login{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--cor5);
+        color: white;
+        border-radius: 20px;
+        padding: 10px;
+        font-family: var(--font);
+        box-shadow: 0.5px 0.5px 54px 0.5px var(--cor1);
+    }
+    #txt1{
+        font-family: var(--font2);
+        font-size: 2rem;
+        text-align: center;
+    }
+    #bem-vindo{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+    #bem-vindo > span > p {
+        text-align: justify ;
+        font-size: .9rem;
+        
+    }
+    #bem-vindo > span{
+        display: flex;
+        justify-content: center;
+    }
+    h2{
+        margin: 0;
+    }
+
+    
+   #ps{
+    font-size: 2rem;
+   }
+   nav > a{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: .8rem;
+    color: white;
+    font-weight: bold;
+}
+    #p1{
+        margin: auto;
+        
+    }
+    span > p{
+        text-align: justify;
+        width: 80%;
+    }
+    #p2{
+        display: none;
+    }
+}
+
+
+@media (max-width: 560px){
+    form{
+        position: absolute;
+        top: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 330px;
+        height: 700px;
+    }
+    
+    #bem-vindo{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        order: 2;
+    }
+    #bem-vindo > span > p {
+        text-align: justify ;
+        font-size: .7rem;
+    }
+    #bem-vindo > span{
+        display: flex;
+        justify-content: center;
+    }
+    #txt1{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        display: inline;
+    }
+    h2{
+       margin-top: 50px;
+    }
+    img{
+        margin-left: 20px;
+    }
+   #lupa{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%);
+    
+   }
+    
+    
 }
