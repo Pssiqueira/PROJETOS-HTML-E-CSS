@@ -322,6 +322,7 @@ p{
         height: 700px;
        
     }
+}
     main{
         
         width: 100%;
@@ -363,16 +364,39 @@ p{
   #nav{
     margin: 0px ;
     gap: 10px;
-  }
-    
+  }                             
+
+@media(max-width: 400px){
+    nav > a {
+        font-size: 0.5rem;
+    }
+    form{
+        width: 250px;
+
+    }
+    #login{
+        position: relative;
+        width: 200px;
+        top: 10%;
+    }
+    #p1{
+        margin: auto;
+        font-size: 0.7rem;
+        position: relative;
+        width: 200px;
+        top: 26%;
+    }
+    #entrar{
+        height: 50px;
+    }
 }
-@media(max-height: 900px){
+@media(max-height: 1080px){
     main{
         position: relative;
-        top: 30%;
+        top: 20%;
     }
     header{
-        height: 150px;
+        
     }
     #logo > #ps {
         font-size: 1.5rem;
