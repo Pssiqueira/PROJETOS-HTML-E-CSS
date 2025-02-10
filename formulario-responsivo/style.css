@@ -313,7 +313,7 @@ p{
 @media (max-width: 517px){
     form{
         position: absolute;
-        top: 90%;
+        top: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
