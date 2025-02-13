@@ -7,38 +7,59 @@
     <link rel="stylesheet" href="./style.css">
  </head>
  <body>
-    <header>
-        <div id="logo">
-            <h1>PS</h1>
-            <p>Em apreendizado</p>
-        </div>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <h1>PS</h1>
+            </div>
+            <div id="dnav">
+                <nav>
+                    <a href="">Home</a>
+                    <a href="">Diário</a>
+                    <a href="">Portifólio</a>
+                    <a href="">Sobre</a>
+                    <a href="">Login</a>
+                    <a href="">Cadastre-se</a>
+                </nav>
+        
+            </div>
+        </header>
+        <main>
+            <div id="apresentação">
+                <h1 style="text-align: center;">Bem vindo</h1>
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nisi magni animi ad eos sit voluptatem facilis inventore, aperiam iure illo eveniet, nihil neque officiis? Deleniti quibusdam totam optio consequatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius quia, voluptatem aut, hic alias molestias non sit dolorum omnis laboriosam voluptates modi aliquam quas pariatur consectetur quis nulla eveniet eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quas officia consectetur consequatur voluptate, mollitia consequuntur voluptates optio dicta nesciunt nihil, tempore non sequi at quaerat. Quasi reiciendis repudiandae fuga.</p>
 
-        <div id="dnav">
-            <nav>
-                <a href="">Home</a>
-                <a href="">Diário</a>
-                <a href="">Portifólio</a>
-                <a href="">Sobre</a>
-            </nav>
-            <nav id="nav2">
-                <a href="">Login</a>
-                <a href="">Cadastre-se</a>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div>
-            <h1>Bem vindo</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nisi magni animi ad eos sit voluptatem facilis inventore, aperiam iure illo eveniet, nihil neque officiis? Deleniti quibusdam totam optio consequatur.</p>
-        </div>
-        <div>
-            <form action="">
-                <label for="mail">Email</label>
-                <input type="email" id="mail">
-                <label for="pass">Senha</label>
-                <input type="password">
-            </form>
-        </div>
-    </main>
+                <p style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit iste eius, corporis vel sapiente totam nesciunt natus aut, blanditiis porro cum magni ducimus ullam laboriosam culpa esse obcaecati qui atque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium necessitatibus repudiandae, deleniti aliquam, maxime optio quis mollitia natus, maiores laborum quisquam. Odit sint eligendi voluptatibus fugiat delectus quis nemo modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dignissimos accusantium voluptates consectetur perferendis et, doloremque dicta dolores alias ratione aliquid nulla beatae obcaecati molestiae sapiente impedit commodi necessitatibus provident!</p>
+            </div>
+            <div id="form">
+                <h1>Login</h1>
+                <form action="" id="log">
+                    <label for="mail" id="lmail">Email</label>
+                    <input type="email" id="mail">
+                    <label for="pass">Senha</label>
+                    <input type="password" id="pass">
+                    <input type="submit" id="ientrar" value="Entrar" >
+
+                    <p>ou continue com</p>
+                    <div id="cad">
+                        <a href="">
+                            <img src="./imagens/pngwing.com (1).png" alt="">
+                        </a>
+                        <a href="" >
+                            <img src="./imagens/x-twitter-brands-solid.svg" alt="" style="width: 30px;">
+                        </a>
+                        <a href="">
+                            <img src="./imagens/github.png" alt="">
+                        </a>
+                        
+                    </div>
+                    <p>@Pssiqueira</p>
+                </form>       
+            </div>
+        </main>
+    </div>
  </body>
+ <script src="script.js">
+    
+ </script>
  </html>
