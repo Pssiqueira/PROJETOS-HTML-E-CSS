@@ -19,7 +19,7 @@
                     <a href="">Portifólio</a>
                     <a href="">Sobre</a>
                     <a href="">Login</a>
-                    <a href="">Cadastre-se</a>
+                    <a href="">Cadastrar</a>
                 </nav>
         
             </div>
@@ -28,30 +28,38 @@
             <div id="apresentação">
                 <h1 style="text-align: center;">Bem vindo</h1>
                 <div id="profile">
-                    <img src="./imagens/IMG_20250131_141000_277 (1).webp" alt="profile" style="width: 150px; height: 150px; border-radius: 50%;">
+                    <img src="./imagens/IMG_20250131_141000_277 (1).webp" alt="profile" style="border-radius: 50%;">
                 </div>
-                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nisi magni animi ad eos sit voluptatem facilis inventore, aperiam iure illo eveniet, nihil neque officiis? Deleniti quibusdam totam optio consequatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius quia, voluptatem aut, hic alias molestias non sit dolorum omnis laboriosam voluptates modi aliquam quas pariatur consectetur quis nulla eveniet eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quas officia consectetur consequatur voluptate, mollitia consequuntur voluptates optio dicta nesciunt nihil, tempore non sequi at quaerat. Quasi reiciendis repudiandae fuga.</p>
+                <p style="text-align: justify;" id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nisi magni animi ad eos sit voluptatem facilis inventore, aperiam iure illo eveniet, nihil neque officiis? Deleniti quibusdam totam optio consequatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
 
-                <p style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit iste eius, corporis vel sapiente totam nesciunt natus aut, blanditiis porro cum magni ducimus ullam laboriosam culpa esse obcaecati qui atque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium necessitatibus repudiandae, deleniti aliquam, maxime optio quis mollitia natus, maiores laborum quisquam. Odit sint eligendi voluptatibus fugiat delectus quis nemo modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dignissimos accusantium voluptates consectetur perferendis et, doloremque dicta dolores alias ratione aliquid nulla beatae obcaecati molestiae sapiente impedit commodi necessitatibus provident!</p>
+                <p style="text-align: justify;" id="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit iste eius, corporis vel sapiente totam nesciunt natus aut, blanditiis porro cum magni ducimus ullam laboriosam culpa esse obcaecati qui atque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium necessitatibus repudiandae, deleniti aliquam, maxime optio quis mollitia natus, maiores laborum quisquam. Odit sint eligendi voluptatibus fugiat delectus quis nemo modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dignissimos accusantium voluptates consectetur perferendis et, doloremque dicta dolores alias ratione aliquid nulla beatae obcaecati molestiae sapiente impedit commodi necessitatibus provident!</p>
             </div>
-            <div id="form">
+            <div id="form-container">
                 <h1>Login</h1>
                 <form action="" id="log">
-                    
-                    <label for="mail" class="lmail">
-                        <span style="transition-delay: 0ms;">E</span>
-                        <span style="transition-delay: 50ms;">m</span>
-                        <span style="transition-delay: 100ms;">a</span>
-                        <span style="transition-delay: 150ms;">i</span>  
-                        <span style="transition-delay: 200ms;">l</span>                  
-                    </label>
-                        
-                    
-                    <input type="email" id="mail" required>
-                    <label for="pass">Senha</label>
-                    <input type="password" id="pass" required>
-                    <input type="submit" id="ientrar" value="Entrar">
+                    <div id="email">
+                        <input type="email" id="mail">
+                        <label for="mail">
+                            <span style="transition-delay: 0ms;">E</span>
+                            <span style="transition-delay: 50ms;">-</span>
+                            <span style="transition-delay: 100ms;">m</span>
+                            <span style="transition-delay: 150ms;">a</span>
+                            <span style="transition-delay: 200ms;">i</span>
+                            <span style="transition-delay: 250ms;">l</span>
+                        </label>
+                    </div>
 
+                    <div id="pass">
+                        <input type="password" id="ipass">
+                        <label for="ipass">
+                            <span style="transition-delay: 0ms;">S</span>
+                            <span style="transition-delay: 50ms;">e</span>
+                            <span style="transition-delay: 100ms;">n</span>
+                            <span style="transition-delay: 150ms;">h</span>
+                            <span style="transition-delay: 200ms;">a</span>
+                        </label>
+                    </div>
+                    <input type="submit" value="Entrar" id="entrar">
                     <p>ou continue com</p>
                     <div id="cad">
                         <a href="">

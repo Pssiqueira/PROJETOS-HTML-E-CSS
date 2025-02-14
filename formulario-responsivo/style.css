@@ -16,6 +16,7 @@ body, html{
 body{
     background-image: linear-gradient(to top, var(--cor2), var(--cor1));
     position: relative;
+    background-attachment: fixed;
 }
 header{
     width: 90%;
@@ -54,8 +55,8 @@ nav > a{
     margin-right: 30px;
 }
 #container{
-    width: 95vw;
-    height: 95vh;
+    width: 100vw;
+    height: 100vh;
     background-color: transparent;
     position: absolute;
     top: 50%;
@@ -87,7 +88,7 @@ main > div > h1, p{
     color: white;
     padding: 20px ;
 }
-#form{
+#form-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,52 +97,53 @@ main > div > h1, p{
     background-color: #1A1F33;
     border-radius: 20px;
     margin-top: 30px;
-}
-
-#log{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 3px;   
-    
-}
-#log > #mail , #pass{
     margin-bottom: 30px;
 }
-#log > input{
-    position: relative;
-    display: block;
-    width: 300px;
-    height: 25px;
-    border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.308);
-    outline: 0;
-    background-color: transparent;
-}
-#log label{
+#email, #pass{
     display: flex;
-    align-items: end;
-    height: 50px;
+    flex-direction: column;
+    margin-bottom: 30px;
+    gap: 10px;
 }
-#log label span{
+#email{
+    margin-top: 40px;
+}
+#mail, #ipass{
     position: relative;
-    display: inline-block;
-    transition: 0.5s;
+    order: 2;
+    height: 25px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.384);
+    border-radius: 7px;
+    outline: 0;
+    width: 300px;
+    height: 35px;
 }
 
-#log input:focus ~  label span{
-    transform: translateY(-30px);
+label span{
+    position: relative;
+    display: inline-block;
+    transition: .5s;
 }
-#log  #ientrar{
-    width: 100%;
+input:focus ~ label span{
+    transition: .5s;
+    transform: translateY(-10px);
+}
+
+#entrar{
+    display: block;
     margin: auto;
-    height: 40px;
-    color: white;
-    cursor: pointer;
-}
-#log  #ientrar:hover{
+    width: 300px;
+    height: 35px;
     background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.384);
+    border-radius: 7px;
+    outline: 0;
+    color: white;
+    font-weight: bold;
 }
+
+
 img{
     width: 50px;
     height: 50px;
@@ -150,22 +152,75 @@ img{
 form > p{
     text-align: center;
 }
-#cad {
+#cad{
     display: flex;
+    justify-content: center;
     gap: 30px;
     margin: auto;
 }
 @media(max-width: 1024px){
-    #log > input{
+    #mail, #ipass {
         margin: auto;
         width: 150px;
         
     }
-    #log> label {
+    label {
         margin-left: 20px ;
     }
-    #log #ientrar{
+    #entrar{
         margin-top: 30px;
         width: 150px;
+        height: 40px;
+    }
+}
+@media(max-width: 530px){
+    header{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: -20px;
+    }
+    header nav a{
+        font-size: .7rem;
+    }
+   
+    nav{
+        gap: 20px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    #apresentação{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
+    #profile  img{
+        width: 50px;
+        height: 50px;
+    }
+    #form-container{
+        width: 100%;
+    }
+    #mail, #ipass, #entrar{
+        width: 270px;
+    }
+    label {
+        margin-left: 0px ;
+    }
+    #p1{
+        font-size: 0.7rem;
+    }
+    #p2{
+        display: none;
+    }
+    #logo{
+        position: relative;
+        top: -30px;
     }
 }
