@@ -188,7 +188,9 @@ form > p{
     header nav a{
         font-size: .7rem;
     }
-   
+   #dnav{
+        margin: auto;
+   }
     nav{
         display: flex;
         flex-direction: row;
