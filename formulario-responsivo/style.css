@@ -14,6 +14,10 @@ body, html{
     margin: 0;
     padding: 0;
 }
+html{
+    position: relative;
+    z-index: 100;
+}
 body{
     background-image: linear-gradient(to top, var(--cor2), var(--cor1));
     position: relative;
@@ -185,7 +189,7 @@ form > p{
 }
 @media(max-width: 530px){
     header{
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
