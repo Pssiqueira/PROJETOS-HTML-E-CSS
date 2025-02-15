@@ -129,6 +129,11 @@ label span{
 input:focus ~ label span{
     transition: .5s;
     transform: translateY(-10px);
+    
+}
+#mail:focus, #ipass:focus{
+    border-color: aqua;
+    caret-color: white;
 }
 #profile > img {
     width: 150px;
@@ -197,12 +202,14 @@ form > p{
         gap: 13px;
         margin-left: 0;
     }
-    nav > a{
-        font-size: .4rem;
+    header #dnav nav a {
+        font-size: .85rem;
     }
     main{
         display: flex;
         flex-direction: column;
+        margin: 0;
+        width: 100%;
     }
     #apresentação{
         display: flex;
@@ -217,9 +224,11 @@ form > p{
     }
     #form-container{
         width: 100%;
+        position: relative;
     }
+   
     #mail, #ipass, #entrar{
-        width: 270px;
+        width: 300px;
     }
     label {
         margin-left: 0px ;
