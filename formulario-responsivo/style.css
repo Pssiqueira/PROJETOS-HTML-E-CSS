@@ -20,13 +20,13 @@ body{
     background-attachment: fixed;
 }
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:  1;
     width: 100%;
-    margin: auto;
-    transform: translate(0px, 10px);
     padding: 20px 0px 20px 0px;
-    background-color: transparent;
-    
-    
+    background-image: linear-gradient(to top, var(--cor2), var(--cor1));
 }
 #logo{
     margin-left: 20px;
@@ -57,17 +57,18 @@ nav > a{
 }
 #container{
     width: 90%;
-    height: 100vh;
+   
     background-color: transparent;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -30%);
     border-radius: 20px;
     
     
 }
 main{
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 90% ;
