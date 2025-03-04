@@ -1,0 +1,39 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    transform-style: preserve-3d;
+    
+}
+#q{
+    transform-origin: top right;
+    transform: skewY(-45deg);
+    width: 50px;
+    height: 400px;
+    background-color: gray;
+    border-radius: 10px 0px 0px 10px;
+    bo    
+}
+#q1{
+    width: 200px;
+    height: 400px;
+    background-image: url(./Desktop\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#q1:hover{
+    transform: rotateY(360deg);
+    scale: 1.1;
+   
+}
+#q2{
+    transform-origin: top left;
+    transform: skewY(45deg);
+    width: 50px;
+    height: 400px;
+    background-color: gray;
+    border-radius: 0 10px 10px 0px;
+}
