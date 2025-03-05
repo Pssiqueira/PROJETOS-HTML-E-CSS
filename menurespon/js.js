@@ -1,10 +1,10 @@
 var nav = document.getElementById('nav')
 var lista = document.getElementById('lista')
 nav.addEventListener("click", ()=>{
-    if(lista.style.display == 'block'){
-        lista.style.display = 'none'
+    if(lista.style.left == '10px'){
+        lista.style.left = '-100px'
     }else{
-        lista.style.display = 'block'
+        lista.style.left = '10px'
     }
     
 })

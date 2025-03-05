@@ -6,13 +6,28 @@ a{
     text-decoration: none;
 }
 ul{
-    display: none;
-    transition: 0.5s;
+    display: block;
+    position: relative;
+    left: -100px;
+    transition: .5s;
+    
 }
 main{
     display: flex;
+   
 }
 nav{
     cursor: pointer;
     
+}
+div{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: auto;
+}
+@media only screen and (min-width: 768px){
+    div{
+        width: 50vw;
+    }
 }
