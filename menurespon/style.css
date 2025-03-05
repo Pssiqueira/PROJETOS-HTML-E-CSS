@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    display: none;
+    transition: 0.5s;
+}
+main{
+    display: flex;
+}
+nav{
+    cursor: pointer;
+    
+}
