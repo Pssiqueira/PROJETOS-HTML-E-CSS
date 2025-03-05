@@ -4,12 +4,14 @@
 }
 a{
     text-decoration: none;
+    color: rgb(37, 34, 34);
 }
 ul{
     display: block;
     position: relative;
     left: -100px;
     transition: .5s;
+    list-style-type: none;
     
 }
 main{
@@ -18,7 +20,9 @@ main{
 }
 nav{
     cursor: pointer;
-    
+}
+li:not(:last-child){
+    margin-bottom: 20px;
 }
 div{
     display: flex;
@@ -29,5 +33,13 @@ div{
 @media only screen and (min-width: 768px){
     div{
         width: 50vw;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    ul{
+        position: relative;
+        left: 10px;
+        transition: .5s;
     }
 }
