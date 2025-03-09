@@ -66,8 +66,9 @@ main{
 #navmain nav ul li a{
     display: block;
 }
-#home{
-    position: absolute;
+#icons{
+    position: relative;
+    color: white;
     z-index: 3;
 }
 @media only screen and (min-width: 600px) {
