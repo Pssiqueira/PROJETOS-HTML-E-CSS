@@ -1,6 +1,6 @@
-var navmain = document.getElementById('nav-main')
-var down = document.getElementById('down')
-var sear = document.getElementById('sear')
+var navmain = document.getElementById('nav-mai')
+var down = document.getElementById('dow')
+var sear = document.getElementById('sea')
 function menu(){
     down.classList.add('slide')
     sear.classList.add('slide2')

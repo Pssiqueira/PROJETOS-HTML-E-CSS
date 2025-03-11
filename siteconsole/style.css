@@ -51,26 +51,45 @@ main{
     filter: brightness(50%);
     
 }
-span{
-    color: white;
-    display: block;
-}
+
 #nav-main{
     height: 100vh;
-    width: 200px;
+    width: 50px;
     background-color: transparent;
     backdrop-filter: blur(10px);
     border-radius: 0px 7px 7px 0px;
     position: absolute;
     z-index: 1;
-    left: -200px;
     transition: .5s;
 }
 #icons{
-    position: absolute;
+    position: relative;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
+}
+#menu{
+    appearance: none;
+    display: none;
+    
+}
+input:checked + #nav-main{
+    width: 200px;
+    transition: .5s;
+}
+#menu ~ label{
+    appearance: none;
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.ic{
+    cursor: pointer;
+}
+i{
+    display: block;
+    margin: auto;
 }
 i:not(:last-child){
     position: relative;
@@ -85,6 +104,7 @@ i:not(:last-child){
     transition: 0.9s;
     
 }
+
 @media only screen and (min-width: 600px) {
     nav{
         display: block;
