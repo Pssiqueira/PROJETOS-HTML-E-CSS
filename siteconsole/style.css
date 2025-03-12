@@ -53,8 +53,9 @@ main{
 }
 
 #nav-main{
+    position: relative;
     height: 100vh;
-    width: 50px;
+    width: 100px;
     background-color: transparent;
     backdrop-filter: blur(10px);
     border-radius: 0px 7px 7px 0px;
@@ -73,10 +74,15 @@ main{
     display: none;
     
 }
-input:checked + #nav-main{
+.txt-icon{
+    display: block;
+}
+input:checked + #nav-main {
     width: 200px;
     transition: .5s;
 }
+
+
 #menu ~ label{
     appearance: none;
     position: relative;
@@ -86,24 +92,25 @@ input:checked + #nav-main{
 }
 .ic{
     cursor: pointer;
+    display: block;
+    margin: auto; 
+}
+#nav-main label{
+    margin-bottom: 30px;
 }
 i{
     display: block;
     margin: auto;
 }
-i:not(:last-child){
-    position: relative;
+.icon-box:not(:last-child){
     margin-bottom: 30px;
 }
-.slide{
-    margin-left: 25px;
-    transition: 0.5s;
+.icon-box{
+    text-align: center;
+    display: block;
+    color: white;
 }
-.slide2{
-    margin-left: 50px;
-    transition: 0.9s;
-    
-}
+
 
 @media only screen and (min-width: 600px) {
     nav{
