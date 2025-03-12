@@ -75,13 +75,15 @@ main{
     
 }
 .txt-icon{
-    display: block;
+    
 }
 input:checked + #nav-main {
     width: 200px;
     transition: .5s;
 }
-
+input:checked + .txt-icon{
+    display: none;
+}
 
 #menu ~ label{
     appearance: none;
