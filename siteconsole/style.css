@@ -46,7 +46,7 @@ main{
     position: absolute;
     width: 100%;
     height: 100vh;
-    background: black url(./imagens/main\ desk.jpg) center center no-repeat fixed;
+    background: black url(./imagens/main\ desk\ att2.png) center center no-repeat fixed;
     background-size: cover;
     filter: brightness(50%);
     
