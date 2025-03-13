@@ -4,6 +4,7 @@
 }
 body{
     width: 100vw;
+    height: 100vh;
     overflow-x: hidden;
     position: absolute;
 
@@ -18,7 +19,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     border-bottom: 1px solid gray;
-    z-index: 1;
+    z-index: 3;
 }
 nav{
     display: none;
@@ -43,25 +44,32 @@ li:not(:last-child){
     margin-right: 10px;
 }
 main{
-    position: absolute;
-    width: 100%;
+    display: flex;
+    position: relative;
+    width: 100vw;
     height: 100vh;
-    background: black url(./imagens/main\ desk\ att2.png) center center no-repeat fixed;
-    background-size: cover;
-    filter: brightness(50%);
-    
+    background-color: black;
+    backdrop-filter: blur(10px );
 }
 
 #nav-main{
-    position: relative;
     height: 100vh;
-    width: 100px;
-    background-color: transparent;
-    backdrop-filter: blur(10px);
+    width: 50px;
     border-radius: 0px 7px 7px 0px;
-    position: absolute;
-    z-index: 1;
+    position: relative;
     transition: .5s;
+    z-index: 0;
+    background: black url(./imagens/main\ desk\ att2.png);
+    background-repeat: repeat;
+}
+#conteudo{
+    white-space: wrap;
+    font-size: 0.7rem;
+    text-align: center;
+    color: white;
+    width: 100%;
+    background: black url(./imagens/main\ desk\ att2.png) center center no-repeat fixed;
+    background-size: cover;
 }
 #icons{
     position: relative;
@@ -74,15 +82,30 @@ main{
     display: none;
     
 }
-.txt-icon{
-    
+
+
+#txti{
+    color: white;
+    display: none;
+    position: absolute;
+    z-index: 5;
+    margin-top: 130px;
+    left: 05px;
 }
-input:checked + #nav-main {
+.txt:not(:last-child){
+    margin-bottom: 40px;
+
+}
+input:checked ~ #nav-main{
     width: 200px;
     transition: .5s;
 }
-input:checked + .txt-icon{
-    display: none;
+input:checked + #txti{
+    left: 50px;
+    transition: .5s;
+}
+input:checked ~ .txt{
+    display: block;
 }
 
 #menu ~ label{

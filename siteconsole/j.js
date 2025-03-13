@@ -1,5 +1,5 @@
 var txt = document.getElementsByClassName('txt')
-var menu = document.getElementById('imenu')
+var menu = document.getElementById('menu')
 menu.addEventListener("click", ()=>{
-    txt.style.color = 'red'
+    txt.style.display = 'block'
 })
