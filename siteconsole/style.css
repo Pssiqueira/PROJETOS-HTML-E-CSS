@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *{
     margin: 0;
     padding: 0;
@@ -55,7 +56,6 @@ main{
 #nav-main{
     height: 100vh;
     width: 50px;
-    border-radius: 0px 7px 7px 0px;
     position: relative;
     transition: .5s;
     z-index: 0;
@@ -68,6 +68,7 @@ main{
     text-align: center;
     color: white;
     width: 100%;
+    height: 100vh;
     background: black url(./imagens/main\ desk\ att2.png) center center no-repeat fixed;
     background-size: cover;
 }
@@ -82,39 +83,28 @@ main{
     display: none;
     
 }
-
-
-#txti{
-    color: white;
-    display: none;
-    position: absolute;
-    z-index: 5;
-    margin-top: 130px;
-    left: 05px;
+#menu:checked ~ #nav-main .txt{
+    display: block;
+    position: relative;
+    left: 0px;
+    
 }
-.txt:not(:last-child){
-    margin-bottom: 40px;
-
+#icons:hover > .icon-box:not(:hover){
+    filter: opacity(50%);
+    transition: .5s;
 }
+.txt{
+    display: block;
+    position: relative;
+    left: -200px;
+    transition: .5s;
+}
+
 input:checked ~ #nav-main{
     width: 200px;
     transition: .5s;
 }
-input:checked + #txti{
-    left: 50px;
-    transition: .5s;
-}
-input:checked ~ .txt{
-    display: block;
-}
 
-#menu ~ label{
-    appearance: none;
-    position: relative;
-    display: block;
-    margin: auto;
-    margin-bottom: 30px;
-}
 .ic{
     cursor: pointer;
     display: block;
@@ -123,10 +113,7 @@ input:checked ~ .txt{
 #nav-main label{
     margin-bottom: 30px;
 }
-i{
-    display: block;
-    margin: auto;
-}
+
 .icon-box:not(:last-child){
     margin-bottom: 30px;
 }
