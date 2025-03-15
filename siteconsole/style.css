@@ -59,8 +59,8 @@ main{
     position: relative;
     transition: .5s;
     z-index: 0;
-    background: black url(./imagens/main\ desk\ att2.png);
-    background-repeat: repeat;
+    background-image: linear-gradient(to right, rgb(0, 17, 0), rgb(23, 34, 23));
+    
 }
 #conteudo{
     white-space: wrap;
