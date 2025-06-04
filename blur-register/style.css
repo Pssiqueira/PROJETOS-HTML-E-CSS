@@ -1,3 +1,11 @@
+:root{
+    --verde: #145259;
+    --bege: #BABF95;
+    --begeclaro: #F1F2C2;
+    --marromclaro: #A69068;
+    --marrom: #734F2F;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -5,6 +13,27 @@ body{
 #container{
     width: 100vw;
     height: 100vh;
-    background: black url(./images/image.png) center bottom no-repeat fixed;
-    background-size: cover;
+    background-color: var(--begeclaro);
+}
+#logo img{
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+#nav-bar ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+    color: var(--verde);
+    font-size: 1.5rem;
+}
+#nav-bar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
